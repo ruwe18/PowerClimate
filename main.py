@@ -4,7 +4,7 @@ import pandas as pd
 app = Flask(__name__)
 
 # Load data
-url = 'pilot_topdown_CO2_Budget_countries_v1.csv'
+url = 'pilot_topdown_CO2_Budget_countries_v1.csv' #DATA DOWNLOADED AND EXTRACTED FROM: https://ceos.org/gst/files/pilot_topdown_CO2_Budget_countries_v1.csv
 df_all = pd.read_csv(url, skiprows=52)
 alpha_3_codes = df_all['Alpha 3 Code'].unique()
 
